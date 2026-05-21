@@ -79,7 +79,7 @@ nasa-exoplanet-analysis/
 1. Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPO_URL
+git clone https://github.com/morganm4951-debug/nasa-exoplanet-analysis.git
 
 2. Install dependencies
 
