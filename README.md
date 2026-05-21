@@ -73,6 +73,11 @@ nasa-exoplanet-analysis/
 - ├── README.md
 - └── requirements.txt
 
+## Example Visualizations
+
+### Planet Radius Distribution
+
+![Planet Radius Distribution](images/radius_distribution.png)
 
 ## How to Run
 
@@ -90,4 +95,3 @@ jupyter notebook
 
 4. Open:
 notebooks/exoplanet_analysis.ipynb
-
