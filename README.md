@@ -73,12 +73,6 @@ nasa-exoplanet-analysis/
 - ├── README.md
 - └── requirements.txt
 
-## Example Visualizations
-
-### Planet Radius Distribution
-
-![Planet Radius Distribution](images/radius_distribution.png)
-
 ## How to Run
 
 1. Clone the repository
