@@ -62,11 +62,14 @@ This analysis explores scientific questions, such as:
 
 ### Potentially Habitable Planets
 
-![Habitable Planets](images/habitable_exoplanets.png)
+![Potentially Habitable Planets](images/habitable_exoplanets.png)
 
 ### Interactive Exoplanet Explorer
 
-![Interactive Exoplanet Explorer](images/interactive_exoplanet.png)
+![Static Preview of Exoplanet Explorer](images/interactive_exoplanet.png)
+
+>Click to open interactive version:
+[View Interactive Chart](images/interactive_exoplanet.html)
 
 ### Feature Correlations
 
