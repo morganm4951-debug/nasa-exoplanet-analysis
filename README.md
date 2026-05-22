@@ -52,6 +52,38 @@ This analysis explores scientific questions, such as:
 - How do host star temperatures affect planets?
 - What trends exist among confirmed exoplanets?
 
+## Measurements and Scientific Units
+
+This project analyzes confirmed exoplanet data retrieved from NASA’s Exoplanet Archive. Many planetary measurements are expressed using Earth-relative units, allowing easier comparison between discovered exoplanets and Earth.
+
+For example:
+
+- A planet mass value of `1` represents a planet with the same mass as Earth.
+- A planet radius value of `1` represents a planet with the same radius as Earth.
+- Values greater than `1` indicate planets larger or more massive than Earth.
+- Values smaller than `1` indicate planets smaller or less massive than Earth.
+
+Earth itself is not included in the dataset; instead, Earth is used as the reference baseline for comparison.
+
+### Measurements Used in the Analysis
+
+| Feature | Description | Unit |
+|---|---|---|
+| `pl_bmasse` | Planet mass | Earth masses |
+| `pl_rade` | Planet radius | Earth radii |
+| `pl_eqt` | Planet equilibrium temperature | Kelvin (K) |
+| `st_teff` | Host star effective temperature | Kelvin (K) |
+| `sy_dist` | Distance from Earth to planetary system | Parsecs |
+
+### Potential Habitability Criteria
+
+Potentially habitable planets were identified using simplified filtering criteria based on planetary size and equilibrium temperature:
+
+- Equilibrium temperature between `200 K` and `320 K`
+- Planet radius smaller than `2 Earth radii`
+
+These filters were used for exploratory analysis only and do not confirm true planetary habitability.
+
 ## Data Visualizations
 
 ### Distribution of Exoplanet Sizes
@@ -77,14 +109,23 @@ This analysis explores scientific questions, such as:
 ![Habitable Planets](images/feature_correlations.png)
 
 
+## Key Interpretations
+
+- Large-radius planets within the dataset are interpreted to most likely be gas giant exoplanets because planets with radii significantly larger than Earth typically contain gaseous atmospheres.
+- Planets with radii smaller than approximately 2 Earth radii are interpreted to most likely be rocky planets  since smaller-radius planets are more likely to possess solid terrestrial surfaces.
+- Candidate habitable planets were identified using temperatures between 200 K and 320 K and radii smaller than 2 Earth radii. 
+
 ## Key Findings
+- Several exoplanets fall within approximate habitable-zone temperature ranges based on their equilibrium, temperature, and planetary radius. 
+- Most confirmed exoplanets in the dataset are significantly larger than Earth, with gas giant planets representing a substantial amount of those detected discoveries. 
+- Extremely hot exoplanets appear frequently throughout the dataset, indicating that many of the planets that we can detect currently orbit very close to their stars.
+- Smaller rocky planets occur less frequently in the dataset, indicating that many of them we may be unable to currently detect.
+- Analysis of planetary equilibrium temperature and planetary radius indicate that planets orbiting hotter stars or existing at closer orbital distances generally had higher overall temperatures.
+- Larger exoplanets exhibited a wider range of masses and equilibrium temperatures compared to smaller rocky planets, suggesting greater detectable physical diversity among planetary systems that are likely to be gas giant planetary systems.
 
-- Most confirmed exoplanets are larger than Earth.
-- Extremely hot planets are common in current discoveries.
-- Smaller rocky planets appear less frequently in the dataset.
-- Several planets fall within approximate habitable-zone temperature ranges.
-- Host star temperature appears related to planetary equilibrium temperature.
+## Project Limitations
 
+Although these potentially habitable planets share some Earth-like characteristics, equilibrium temperature alone cannot determine true habitability. Factors such as atmospheric composition, magnetic fields, surface pressure, water availability, and stellar radiation exposure are not accounted for in this analysis aand as such would require additional scientific data and analysis.
 
 ## How to Run This Project Locally
 
