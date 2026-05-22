@@ -43,17 +43,26 @@ plt.savefig("../images/temp_vs_radius.png")
 
 ## Example Visualizations
 
-### Planet Radius Distribution
+### Distribution of Exoplanet Sizes
 
 ![Planet Radius Distribution](images/radius_distribution.png)
 
-### Planet Temperature vs Radius
+### Planet Size vs Temperature
 
-![Temperature vs Radius](images/temp_vs_radius.png)
+![Temperature vs Radius](images/planet_temperaturw.png)
 
 ### Potentially Habitable Planets
 
-![Habitable Planets](images/habitable_planets.png)
+![Habitable Planets](images/.png)
+
+### Interactive Exoplanet Explorer
+
+![Habitable Planets](images/.png)
+
+### Feature Correlations
+
+![Habitable Planets](images/.png)
+
 
 ## Key Findings
 
