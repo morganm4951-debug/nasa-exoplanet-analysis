@@ -33,12 +33,13 @@ The dataset was retrieved using NASA's Exoplanet Archive API and includes inform
 ## Project Structure
 
 nasa-exoplanet-analysis/
-
-- ├──data/
-- ├── notebooks/
-- ├── images/
-- ├── README.md
-- └── requirements.txt
+├── data/
+├── notebooks/
+├── images/
+├── docs/
+│   └── interactive_exoplanet.html
+├── README.md
+└── requirements.txt
 
 
 ## Project Goals
@@ -68,7 +69,7 @@ This analysis explores scientific questions, such as:
 
 ![Static Preview of Exoplanet Explorer](images/interactive_exoplanet.png)
 
->Click to open interactive version: [Open Interactive Exoplanet Explorer](https://htmlpreview.github.io/?https://raw.githubusercontent.com/morganm4951-debug/nasa-exoplanet-analysis/main/images/interactive_exoplanet.html)
+>Click to open interactive version: [Open Interactive Exoplanet Explorer](https://morganm4951-debug.github.io/nasa-exoplanet-analysis/interactive_exoplanet.html)
 
 ### Feature Correlations
 
