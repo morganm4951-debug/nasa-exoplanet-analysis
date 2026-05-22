@@ -6,17 +6,17 @@ This project analyzes real exoplanet data from NASA's Exoplanet Archive using Py
 
 The goal of this project is to explore relationships between planetary size, temperature, host stars, and potentially habitable planets through data visualization and exploratory data analysis.
 
-## Technologies Used
+## Tools Used
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Plotly
-- Jupyter Notebook
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- plotly
+- kaleido
+- jupyterlab
 
-## Dataset Source
+## Dataset Informaion
 
 Data was obtained from NASA's Exoplanet Archive:
 
@@ -30,48 +30,6 @@ The dataset was retrieved using NASA's Exoplanet Archive API and includes inform
 - Host star temperature
 - Distance from Earth
 
-## Project Goals
-
-This analysis explores several scientific questions:
-
-- Are larger planets generally hotter?
-- Which planets may exist in the habitable zone?
-- How do host star temperatures affect planets?
-- What trends exist among confirmed exoplanets?
-
-plt.savefig("../images/temp_vs_radius.png")
-
-## Example Visualizations
-
-### Distribution of Exoplanet Sizes
-
-![Planet Radius Distribution](images/radius_distribution.png)
-
-### Planet Size vs Temperature
-
-![Temperature vs Radius](images/planet_temperaturw.png)
-
-### Potentially Habitable Planets
-
-![Habitable Planets](images/.png)
-
-### Interactive Exoplanet Explorer
-
-![Habitable Planets](images/.png)
-
-### Feature Correlations
-
-![Habitable Planets](images/.png)
-
-
-## Key Findings
-
-- Most confirmed exoplanets are larger than Earth.
-- Extremely hot planets are common in current discoveries.
-- Smaller rocky planets appear less frequently in the dataset.
-- Several planets fall within approximate habitable-zone temperature ranges.
-- Host star temperature appears related to planetary equilibrium temperature.
-
 ## Project Structure
 
 nasa-exoplanet-analysis/
@@ -82,19 +40,64 @@ nasa-exoplanet-analysis/
 - ├── README.md
 - └── requirements.txt
 
-## How to Run
 
-1. Clone the repository
+## Project Goals
 
-```bash
-git clone https://github.com/morganm4951-debug/nasa-exoplanet-analysis.git
+This analysis explores scientific questions, such as:
 
-2. Install dependencies
+- Are larger planets generally hotter?
+- Which planets may exist in the habitable zone?
+- How do host star temperatures affect planets?
+- What trends exist among confirmed exoplanets?
 
-pip install -r requirements.txt
+## Data Visualizations
 
-3. Launch Jupyter Notebook
-jupyter notebook
+### Distribution of Exoplanet Sizes
 
-4. Open:
-notebooks/exoplanet_analysis.ipynb
+![Planet Radius Distribution](images/radius_distribution.png)
+
+### Planet Size vs Temperature
+
+![Temperature vs Radius](images/planet_temperature.png)
+
+### Potentially Habitable Planets
+
+![Habitable Planets](images/habitable_exoplanets.png)
+
+### Interactive Exoplanet Explorer
+
+![Interactive Exoplanet Explorer](images/interactive_exoplanet.png)
+
+### Feature Correlations
+
+![Habitable Planets](images/feature_correlations.png)
+
+
+## Key Findings
+
+- Most confirmed exoplanets are larger than Earth.
+- Extremely hot planets are common in current discoveries.
+- Smaller rocky planets appear less frequently in the dataset.
+- Several planets fall within approximate habitable-zone temperature ranges.
+- Host star temperature appears related to planetary equilibrium temperature.
+
+
+## How to Run This Project
+
+1. Clone the repository:
+   git clone https://github.com/morganm4951-debug/nasa-exoplanet-analysis.git
+
+2. Enter the project folder:
+   cd nasa-exoplanet-analysis
+
+3. Install dependencies:
+   pip install -r requirements.txt
+
+4. Start JupyterLab:
+   jupyter lab
+
+5. Open the notebook:
+   notebooks/exoplanet_analysis.ipynb
+
+6. Run all cells:
+   Kernel → Restart Kernel and Run All
