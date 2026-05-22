@@ -68,7 +68,7 @@ This analysis explores scientific questions, such as:
 
 ![Static Preview of Exoplanet Explorer](images/interactive_exoplanet.png)
 
->Click to open interactive version: [Open Interactive Exoplanet Explorer](https://htmlpreview.github.io/?https://github.com/morganm4951-debug/nasa-exoplanet-analysis/blob/main/images/interactive_exoplanet.html)
+>Click to open interactive version: [Open Interactive Exoplanet Explorer](https://htmlpreview.github.io/?https://raw.githubusercontent.com/morganm4951-debug/nasa-exoplanet-analysis/main/images/interactive_exoplanet.html)
 
 ### Feature Correlations
 
