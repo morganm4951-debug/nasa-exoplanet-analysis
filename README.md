@@ -32,6 +32,7 @@ The dataset was retrieved using NASA's Exoplanet Archive API and includes inform
 
 ## Project Structure
 
+```text
 nasa-exoplanet-analysis/
 ├── data/
 ├── notebooks/
@@ -40,7 +41,7 @@ nasa-exoplanet-analysis/
 │   └── interactive_exoplanet.html
 ├── README.md
 └── requirements.txt
-
+```
 
 ## Project Goals
 
@@ -85,7 +86,7 @@ This analysis explores scientific questions, such as:
 - Host star temperature appears related to planetary equilibrium temperature.
 
 
-## How to Run This Project
+## How to Run This Project Locally
 
 1. Clone the repository:
    git clone https://github.com/morganm4951-debug/nasa-exoplanet-analysis.git
@@ -93,14 +94,23 @@ This analysis explores scientific questions, such as:
 2. Enter the project folder:
    cd nasa-exoplanet-analysis
 
-3. Install dependencies:
+3. Create a Virtual Environment:
+   Windows:
+        python -m venv venv
+        venv\Scripts\activate
+
+    Mac/Linux:
+        python -m venv venv
+        source venv/bin/activate
+
+4. Install dependencies:
    pip install -r requirements.txt
 
-4. Start JupyterLab:
+5. Start JupyterLab:
    jupyter lab
 
-5. Open the notebook:
+6. Open the notebook:
    notebooks/exoplanet_analysis.ipynb
 
-6. Run all cells:
+7. Run all cells:
    Kernel → Restart Kernel and Run All
