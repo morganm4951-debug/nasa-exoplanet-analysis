@@ -52,9 +52,19 @@ This analysis explores scientific questions, such as:
 - How do host star temperatures affect planets?
 - What trends exist among confirmed exoplanets?
 
-## Measurements and Scientific Units
+## Dataset Features and Scientific Units
 
-This project analyzes confirmed exoplanet data retrieved from NASA’s Exoplanet Archive. Many planetary measurements are expressed using Earth-relative units, allowing easier comparison between discovered exoplanets and Earth.
+| Feature | Description | Unit |
+|---|---|---|
+| `pl_bmasse` | Planet mass | Earth masses |
+| `pl_rade` | Planet radius | Earth radii |
+| `pl_eqt` | Planet equilibrium temperature | Kelvin (K) |
+| `st_teff` | Host star effective temperature | Kelvin (K) |
+| `sy_dist` | Distance from Earth to planetary system | Parsecs |
+
+### Earth-Relative Measurements
+
+Many planetary measurements are expressed using Earth-relative units, allowing easier comparison between discovered exoplanets and Earth.
 
 For example:
 
@@ -65,24 +75,6 @@ For example:
 
 Earth itself is not included in the dataset; instead, Earth is used as the reference baseline for comparison.
 
-### Measurements Used in the Analysis
-
-| Feature | Description | Unit |
-|---|---|---|
-| `pl_bmasse` | Planet mass | Earth masses |
-| `pl_rade` | Planet radius | Earth radii |
-| `pl_eqt` | Planet equilibrium temperature | Kelvin (K) |
-| `st_teff` | Host star effective temperature | Kelvin (K) |
-| `sy_dist` | Distance from Earth to planetary system | Parsecs |
-
-### Potential Habitability Criteria
-
-Potentially habitable planets were identified using simplified filtering criteria based on planetary size and equilibrium temperature:
-
-- Equilibrium temperature between `200 K` and `320 K`
-- Planet radius smaller than `2 Earth radii`
-
-These filters were used for exploratory analysis only and do not confirm true planetary habitability.
 
 ## Data Visualizations
 
@@ -125,7 +117,15 @@ These filters were used for exploratory analysis only and do not confirm true pl
 
 ## Project Limitations
 
-Although these potentially habitable planets share some Earth-like characteristics, equilibrium temperature alone cannot determine true habitability. Factors such as atmospheric composition, magnetic fields, surface pressure, water availability, and stellar radiation exposure are not accounted for in this analysis aand as such would require additional scientific data and analysis.
+- Although several planets fall within approximate habitable-zone thresholds, equilibrium temperature alone cannot determine true planetary habitability. Factors such as atmospheric composition, magnetic fields, surface pressure, water availability, orbital stability, and stellar radiation exposure are not included in this analysis.
+
+- Planet equilibrium temperature values are theoretical estimates rather than direct measurements of planetary surface conditions.
+
+- Current exoplanet catalogs are affected by observational bias because existing detection methods more easily identify large planets orbiting close to their host stars. Smaller rocky planets may therefore be underrepresented within the dataset.
+
+- Some planetary records contain missing or incomplete measurements, reducing the usable sample size for certain visualizations and correlation analyses. The dataset was also limited to the first 5,000 records retrieved from the NASA Exoplanet Archive and as such does not represent the complete catalog of confirmed exoplanets.
+
+- Correlation analysis identifies statistical relationships between variables but does not establish direct causal relationships between planetary or stellar characteristics.
 
 ## How to Run This Project Locally
 
